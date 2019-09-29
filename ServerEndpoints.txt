@@ -1,0 +1,99 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "insta_app",
+    "description": "An empty Aqueduct application.",
+    "version": "0.0.1"
+  },
+  "servers": [
+    {
+      "url": "34.74.230.221:8888"
+    }
+  ],
+  "paths": {
+    "/signinsimple": {
+      "parameters": [],
+      "post": {
+        "tags": [
+          "SigninSimple"
+        ],
+        "operationId": "signinUser",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response."
+          }
+        }
+      }
+    },
+    "/signincomplex": {
+      "parameters": [],
+      "post": {
+        "tags": [
+          "SigninComplex"
+        ],
+        "operationId": "signinUser",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response."
+          }
+        }
+      }
+    },
+    "/submitotp": {
+      "parameters": [],
+      "post": {
+        "tags": [
+          "OTP"
+        ],
+        "operationId": "handleOTP",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response."
+          }
+        }
+      }
+    },
+    "/togglescript": {
+      "parameters": [],
+      "post": {
+        "tags": [
+          "AcceptRequests"
+        ],
+        "operationId": "toggleAccept",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response."
+          }
+        }
+      }
+    },
+    "/usercount": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "Count"
+        ],
+        "operationId": "getFollowCount",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "responses": {},
+    "parameters": {},
+    "requestBodies": {},
+    "headers": {},
+    "securitySchemes": {},
+    "callbacks": {}
+  }
+}
